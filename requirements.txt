@@ -1,0 +1,4 @@
+pyodbc
+fpdf
+qrcode
+Pillow
