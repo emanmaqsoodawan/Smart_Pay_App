@@ -37,5 +37,10 @@ class SmartPayApp:
         self.root.mainloop()
 
 if __name__ == "__main__":
-    app = SmartPayApp()
-    app.run()
+    try:
+        app = SmartPayApp()
+        app.run()
+    except Exception as e:
+        import tkinter.messagebox
+        tkinter.messagebox.showerror("Critical Error", f"An unexpected error occurred:\n{e}")
+        print(f"Critical Error: {e}")
